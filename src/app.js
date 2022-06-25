@@ -14,9 +14,9 @@ export const App = () => {
     <Route
       path={`/${type}`}
       element={
-        <ProtectedRoute>
+      
           <Navbar />
-        </ProtectedRoute>
+       
       }
     >
       <Route index element={<TableData type={type}  />} />
