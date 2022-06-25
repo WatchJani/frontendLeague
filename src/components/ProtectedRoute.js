@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
       .get('/users/protected', { headers: authHeader() })
       .then((res) => {
         console.log(res);
-        if (res?.data?.token) return setVerified(true);
+        if (res?.data?.token) return setVerified(false);
       })
       .catch((err) => {
         navigate('/', { replace: true });
