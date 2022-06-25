@@ -4,7 +4,7 @@ import axios from '../utils/axiosBackend';
 import { useNavigate } from 'react-router-dom';
 
 const ProtectedRoute = ({ children }) => {
-  const [verified, setVerified] = useState(false);
+  const [verified, setVerified] = useState(true);
   let navigate = useNavigate();
 
   useEffect(() => {
